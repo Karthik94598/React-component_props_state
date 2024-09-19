@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Tut from './components/fc';
+import Ctut from './components/cc';
+import Stat from './components/stat'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div>
+        <Tut name="Giridhar bro" />
+        <p>I am reporting 2nd time from functional component to check.</p>
+      </div>
+
+      <div>
+        <Ctut name="class bro"/>
+        <p>I am reporting 2nd time from class component to check.</p>
+      </div>
+
+      <Stat />
     </div>
   );
 }
